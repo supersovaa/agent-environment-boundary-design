@@ -1,23 +1,21 @@
 ---
 name: agent-environment-boundary-design
-description: Design observation, decision, legal-action, automatic-progression, and action-unit contracts between a decision-making agent and an interactive game, simulator, or learning environment.
+description: Define or revise what a decision-making agent can observe and do, and when control passes between the agent and a game, simulator, or learning environment.
 ---
 
 # Agent–Environment Boundary Design
 
-Use this skill when defining or revising the interaction contract between a decision-making agent and an interactive game, simulator, or learning environment.
-
-This skill targets a single-user AI-agent design workflow.
+In a single-user AI-agent design workflow, define the contract at each point where control passes between the decision-making agent and the environment.
 
 ## Establish the interaction contract
 
 Start from settled requirements, authoritative domain rules, and the environment's existing design canon. Define the externally meaningful contract for the behavior in scope:
 
-1. What the agent observes at each decision, including information visibility and the acting player's or agent's perspective.
-2. When a decision is requested, who decides, what the choice means, and which legal candidates are presented. Establish candidate eligibility from information available at that point.
-3. What the response commits, when its meaning affects environment state, what the environment advances automatically afterward, and where the next observation, decision, termination, or external stop occurs.
-4. Where successive selections form one completed semantic action or learning unit, and where they represent separate decisions. Define the unit that an evaluator or learner attributes value to when the distinction affects the external contract.
-5. When independent selections can be reordered, establish whether the resulting meaning is equivalent and whether order changes observation, legal candidates, recorded decisions, or learning/evaluation units.
+1. **Observation.** What the agent observes at each decision, including information visibility and the acting player's or agent's perspective.
+2. **Choice.** When a decision is requested, who decides, what the choice means, and which legal candidates are presented. Establish candidate eligibility from information available at that point.
+3. **Response and progression.** What the response commits, when its meaning affects environment state, what the environment advances automatically afterward, and where the next observation, decision, termination, or external stop occurs.
+4. **Action unit.** Where successive selections form one completed semantic action or learning unit, and where they represent separate decisions. Define the unit that an evaluator or learner attributes value to when the distinction affects the external contract.
+5. **Ordering.** When independent selections can be reordered, establish whether the resulting meaning is equivalent and whether order changes observation, legal candidates, recorded decisions, or learning/evaluation units.
 
 ## Resolve progression and ambiguity
 
