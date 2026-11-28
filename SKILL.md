@@ -1,11 +1,11 @@
 ---
 name: agent-environment-boundary-design
-description: Define or revise observations, legal actions, and control flow between a decision-making agent and a game, simulator, or learning environment. Define what counts as one action for learning or evaluation.
+description: Use when designing or revising how a decision-making agent interacts with a game, simulator, or learning environment, including its learning or evaluation interface.
 ---
 
 # Agent–Environment Boundary Design
 
-In a single-user AI-agent design workflow, define the contract at each point where control passes between the decision-making agent and the environment.
+In this single-user AI-agent design workflow, establish the contract where control passes between agent and environment. When successive selections affect learning or evaluation, define which selections count as one action.
 
 ## Establish the interaction contract
 
