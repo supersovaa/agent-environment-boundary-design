@@ -1,6 +1,6 @@
 ---
 name: agent-environment-boundary-design
-description: Define or revise what a decision-making agent can observe and do, and when control passes between the agent and a game, simulator, or learning environment.
+description: Define or revise observations, legal actions, and control flow between a decision-making agent and a game, simulator, or learning environment. Define what counts as one action for learning or evaluation.
 ---
 
 # Agent–Environment Boundary Design
